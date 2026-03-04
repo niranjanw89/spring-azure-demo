@@ -21,7 +21,7 @@ contents: read #This is required for actions/checkout
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: '8'
+          java-version: '17'
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -60,3 +60,4 @@ contents: read #This is required for actions/checkout
           app-name: 'sprinf-azure-demo'
           slot-name: 'Production'
           package: '*.jar'
+          
